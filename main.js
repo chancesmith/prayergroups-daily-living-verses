@@ -8,83 +8,17 @@
 // verse data
 var verseData = [
 {
-	"groupTitle": "Fear",
+	"groupTitle": "Addiction",
 	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
 	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
 	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
 },
 {
-	"groupTitle": "Fear",
+	"groupTitle": "Afraid",
 	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
 	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
 	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
-{
-	"groupTitle": "Fear",
-	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
-	},{"verseText":"Psalm 34:4","verseAPI":"Psa 34:4"
-	},{"verseText":"Psalm 56:3","verseAPI":"Psa 56:3"}]
-},
+},	
 {
 	"groupTitle": "Fear",
 	"verses":[{"verseText":"2 Timothy 1:7","verseAPI":"2 Timothy 1:7"
