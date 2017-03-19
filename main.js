@@ -96,7 +96,7 @@ function makeVersesClickable(){
       showVerse(dataJSON);
     }, function(err) {
       // error
-      $('#verse-well').empty().append('Error: Didn\'t recieve bible verse.');
+      $('#verse-well').empty().append('Error: Didn\'t recieve bible verse. Try again?');
     });
   });
 }
