@@ -3,16 +3,16 @@
     "groupTitle": "Addiction",
     "verses": [
       {
-        "text": "2 Timothy 1:7",
-        "api": "2 Timothy 1:7"
+        "text": "John 8:34-36",
+        "api": "John 8:34-36"
       },
       {
-        "text": "Psalm 34:4",
-        "api": "Psa 34:4"
+        "text": "James 1:13-15",
+        "api": "James 1:13-15"
       },
       {
-        "text": "Psalm 56:3",
-        "api": "Psa 56:3"
+        "text": "Proverbs 14:12",
+        "api": "Proverbs 14:12"
       }
     ]
   },
@@ -34,53 +34,617 @@
     ]
   },
   {
+    "groupTitle": "Anxiety",
+    "verses": [
+      {
+        "text": "Matthew 6:25, 31, 33",
+        "api": "Matthew 6:25;6:31;6:33"
+      },
+      {
+        "text": "Philemon 4:6-7",
+        "api": "Philemon 4:6-7"
+      },
+      {
+        "text": "Psalm 46:1",
+        "api": "Psa 46:1"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Distant From God",
+    "verses": [
+      {
+        "text": "1 John 1:8-9",
+        "api": "1 John 1:8-9"
+      },
+      {
+        "text": "Psalm 51:1 & 10",
+        "api": "Psa 51:1 & 10"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Bitter",
+    "verses": [
+      {
+        "text": "Colossians 3:19",
+        "api": "Colossians 3:19"
+      },
+      {
+        "text": "Hebrews 12:14-15",
+        "api": "Hebrews 12:14-15"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Critical of Others",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Curious About God",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Death",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Depressed",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Desperate",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Discouraged",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Doubting God",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Guidance",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Gambling",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Friends Fail",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Forgiveness",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Sexual Sin",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Suicide",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Worried",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Stress",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Peace",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Anger",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Laziness",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
     "groupTitle": "Fear",
     "verses": [
       {
-        "text": "2 Timothy 1:7",
-        "api": "2 Timothy 1:7"
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
       },
       {
-        "text": "Psalm 34:4",
-        "api": "Psa 34:4"
-      },
-      {
-        "text": "Psalm 56:3",
-        "api": "Psa 56:3"
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
       }
     ]
   },
   {
-    "groupTitle": "Hope",
+    "groupTitle": "Greed",
     "verses": [
       {
-        "text": "2 Timothy 1:7",
-        "api": "2 Timothy 1:7"
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
       },
       {
-        "text": "Psalm 34:4",
-        "api": "Psa 34:4"
-      },
-      {
-        "text": "Psalm 56:3",
-        "api": "Psa 56:3"
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
       }
     ]
   },
   {
-    "groupTitle": "Worry",
+    "groupTitle": "Lust",
     "verses": [
       {
-        "text": "2 Timothy 1:7",
-        "api": "2 Timothy 1:7"
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
       },
       {
-        "text": "Psalm 34:4",
-        "api": "Psa 34:4"
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Lying/Deceit",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
       },
       {
-        "text": "Psalm 56:3",
-        "api": "Psa 56:3"
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Revenge",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Stealing",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Abuse",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Failing in Life",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Disaster",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Future",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Guilt",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Leaving Home",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Peace",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Gossip",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Insecurity",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Peer Pressure",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Revenge",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Relationships",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Sickness/Pain",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Sorrow (Grief)",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Temptation",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Trouble",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Adultery",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Adversity",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Abortion",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Weary",
+    "verses": [
+      {
+        "text": "Matthew 6:14-15",
+        "api": "Matthew 6:14-15"
+      },
+      {
+        "text": "Romans 14:10, 13",
+        "api": "Romans 14:10, 13"
       }
     ]
   }
