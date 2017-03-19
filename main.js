@@ -6,32 +6,22 @@
 // https://getbible.net/api
 
 // verse data
-var verseData = [
-{
-	"groupTitle": "Addiction",
-	"verses":[
-  {"text":"2 Timothy 1:7","api":"2 Timothy 1:7"}
-  ,{"text":"Psalm 34:4","api":"Psa 34:4"}
-  ,{"text":"Psalm 56:3","api":"Psa 56:3"}
-  ]
-},
-{
-	"groupTitle": "Afraid",
-  "verses":[
-  {"text":"2 Timothy 1:7","api":"2 Timothy 1:7"}
-  ,{"text":"Psalm 34:4","api":"Psa 34:4"}
-  ,{"text":"Psalm 56:3","api":"Psa 56:3"}
-  ]
-},	
-{
-	"groupTitle": "Fear",
-  "verses":[
-  {"text":"2 Timothy 1:7","api":"2 Timothy 1:7"}
-  ,{"text":"Psalm 34:4","api":"Psa 34:4"}
-  ,{"text":"Psalm 56:3","api":"Psa 56:3"}
-  ]
-}
-];
+var fetchURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/daily-verses.json";
+// ajax data
+var jQueryPromise = $.ajax(fetchURL);
+var realPromise = Promise.resolve(jQueryPromise);
+
+// promise to retreive data
+realPromise
+.then(function (res){
+  var verseData = jQuery.parseJSON( res );
+  // shows the verses requested
+  showContent(verseData);
+  console.log('We have dice on Github data!');
+}, function(err) {
+  // error
+  console.log('do dice on Github data :(');
+});
 
 // check for URL variable
 function getUrlVar(q) {
@@ -39,37 +29,39 @@ function getUrlVar(q) {
 }
 
 // check for test variable (only show this content if variable exists)
-if(getUrlVar("test")){
-  // $('.sqs-block-content').append('<p class="verse" data-verse="Psa 51:1;51:10">test</p>');
-  $('.sqs-block').remove(); // all content blocks
-  var html = "";
-  var count = 0;
-  verseData.forEach(function(category) {
-    count++;
-    if(count % 2 == 0){ 
-      html += '<div class="sqs-block html-block sqs-block-html">';
-    }
-    else{
-      html += '<div class="sqs-block html-block sqs-block-html sqs-col-6 span-6 float float-right">';
-    }
-    html += '<div class="sqs-block-content">';
-    html += '<h2><strong>';
-    html += category.groupTitle;
-    html += '</strong></h2>';
-    var verses = category.verses;
-    verses.forEach(function(verse) {
-      html += '<p class="verse" data-verse="';
-      // add data-verse
-      html += verse.api;
-      html += '"><span>';
-      // add text
-      html += verse.text;
-      html += '</span></p>';
+function showContent(verseData){
+  if(getUrlVar("test")){
+    // $('.sqs-block-content').append('<p class="verse" data-verse="Psa 51:1;51:10">test</p>');
+    $('.sqs-block').remove(); // all content blocks
+    var html = "";
+    var count = 0;
+    verseData.forEach(function(category) {
+      count++;
+      if(count % 2 == 0){ 
+        html += '<div class="sqs-block html-block sqs-block-html">';
+      }
+      else{
+        html += '<div class="sqs-block html-block sqs-block-html sqs-col-6 span-6 float float-right">';
+      }
+      html += '<div class="sqs-block-content">';
+      html += '<h2><strong>';
+      html += category.groupTitle;
+      html += '</strong></h2>';
+      var verses = category.verses;
+      verses.forEach(function(verse) {
+        html += '<p class="verse" data-verse="';
+        // add data-verse
+        html += verse.api;
+        html += '"><span>';
+        // add text
+        html += verse.text;
+        html += '</span></p>';
+      });
+      html += '</div>'; // end sqs-block-content
+      html += '</div>'; // end sqs-block
     });
-    html += '</div>'; // end sqs-block-content
-    html += '</div>'; // end sqs-block
-  });
-  $('body#collection-58c7295bf7e0aba55a4e6688 .Main-content .col.sqs-col-12.span-12:first-of-type').append(html);
+    $('body#collection-58c7295bf7e0aba55a4e6688 .Main-content .col.sqs-col-12.span-12:first-of-type').append(html);
+  }
 }
 
 // add modal markup for puting verses in
