@@ -1,0 +1,62 @@
+<head>
+	<!-- // jquery -->
+
+</head>
+<body>
+<h1>Testing api requests</h1>
+<div id="content"></div>
+<script>
+// verse data
+var verseGithubURL = "";
+if(getUrlVar("testdata")){
+  verseGithubURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/test-daily-verses.json";
+}
+else{
+  verseGithubURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/daily-verses.json";
+}
+// ajax data
+var jQueryPromise = $.ajax(verseGithubURL);
+var realPromise = Promise.resolve(jQueryPromise);
+
+// promise to retreive data
+realPromise
+.then(function (res){
+  var verseData = jQuery.parseJSON( res );
+  // shows the verses requested
+  showContent(verseData);
+}, function(err) {
+  // error
+  console.log("do dice on Github data :(");
+}).then(function (){
+  checkVerses();
+});
+
+// check for URL variable
+function getUrlVar(q) {
+  return (window.location.search.match(new RegExp('[?&]' + q + '=([^&]+)')) || [, null])[1];
+}
+
+// check for test variable (only show this content if variable exists)
+function showContent(verseData){
+	var html = "";
+	var count = 0;
+	verseData.forEach(function(category) {
+	  count++;
+	  html += '<h2><strong>';
+	  html += category.groupTitle;
+	  html += '</strong></h2>';
+	  var verses = category.verses;
+	  verses.forEach(function(verse) {
+	    html += '<p class="verse" data-verse="';
+	    // add data-verse
+	    html += verse.api;
+	    html += '"><span>';
+	    // add text
+	    html += verse.text;
+	    html += '</span></p>';
+	  });
+	});
+	$('#content').append(html);
+}
+</script>
+</body>
