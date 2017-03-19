@@ -6,14 +6,15 @@
 // https://getbible.net/api
 
 // verse data
+var verseGithubURL = "";
 if(getUrlVar("testdata")){
-var fetchURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/test-daily-verses.json";
+  verseGithubURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/test-daily-verses.json";
 }
 else{
-var fetchURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/daily-verses.json";
+  verseGithubURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/daily-verses.json";
 }
 // ajax data
-var jQueryPromise = $.ajax(fetchURL);
+var jQueryPromise = $.ajax(verseGithubURL);
 var realPromise = Promise.resolve(jQueryPromise);
 
 // promise to retreive data
@@ -24,7 +25,9 @@ realPromise
   showContent(verseData);
 }, function(err) {
   // error
-  console.log('do dice on Github data :(');
+  console.log("do dice on Github data :(");
+}).then(function (){
+  makeVersesClickable();
 });
 
 // check for URL variable
@@ -36,12 +39,12 @@ function getUrlVar(q) {
 function showContent(verseData){
   if(getUrlVar("test")){
     // $('.sqs-block-content').append('<p class="verse" data-verse="Psa 51:1;51:10">test</p>');
-    $('.sqs-block').remove(); // all content blocks
+    $(".sqs-block").remove(); // all content blocks
     var html = "";
     var count = 0;
     verseData.forEach(function(category) {
       count++;
-      if(count % 2 == 0){ 
+      if(count % 2 == 0){
         html += '<div class="sqs-block html-block sqs-block-html">';
       }
       else{
@@ -72,28 +75,31 @@ function showContent(verseData){
 $('body').append('<div id="myModal" class="modal"> <div class="modal-content"> <span id="verseModalClose">&times;</span> <p id="verse-well"></p></div></div>');
 
 // onClick of button >> show the verse
-$('p.verse').click(function(){
-  var verseRef = $(this).attr('data-verse');
-  var fetchURL = "https://crossorigin.me/https://getbible.net/json?scripture="+verseRef;
-  // When the user clicks on verse, open the modal 
-  openModal();
-  // ajax data
-  var jQueryPromise = $.ajax(fetchURL);
-  $('#verse-well').empty().append('Loading...');
-  var realPromise = Promise.resolve(jQueryPromise);
-  
-  // promise to retreive data
-  realPromise
-  .then(function (res){
-    var data = fixBibleVerseFetch(res);
-    var dataJSON = jQuery.parseJSON( data );
-    // shows the verses requested
-    showVerse(dataJSON);
-  }, function(err) {
-    // error
-    $('#verse-well').empty().append('Error: Didn\'t recieve bible verse.');
+function makeVersesClickable(){
+  $('p.verse').click(function(){
+    var verseRef = $(this).attr('data-verse');
+    console.log("verseRef: "+verseRef);
+    var fetchURL = "https://crossorigin.me/https://getbible.net/json?scripture="+verseRef;
+    // When the user clicks on verse, open the modal
+    openModal();
+    // ajax data
+    var jQueryPromise = $.ajax(fetchURL);
+    $('#verse-well').empty().append('Loading...');
+    var realPromise = Promise.resolve(jQueryPromise);
+
+    // promise to retreive data
+    realPromise
+    .then(function (res){
+      var data = fixBibleVerseFetch(res);
+      var dataJSON = jQuery.parseJSON( data );
+      // shows the verses requested
+      showVerse(dataJSON);
+    }, function(err) {
+      // error
+      $('#verse-well').empty().append('Error: Didn\'t recieve bible verse.');
+    });
   });
-});
+}
 
 function fixBibleVerseFetch(data){
   // removes first & last characters of data "(" & ";"
@@ -114,7 +120,7 @@ function showVerse(versesJSON){
       html += "<hr>";
     }
   }
-  
+
   // add header to page
   $('#verse-well').empty().append(html);
 }
@@ -145,7 +151,7 @@ function getVerses(versesJSON){
     }
     verse += '</p>';
   }
-  
+
   return verse;
 }
 
