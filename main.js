@@ -6,7 +6,12 @@
 // https://getbible.net/api
 
 // verse data
+if(getUrlVar("testdata")){
+var fetchURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/test-daily-verses.json";
+}
+else{
 var fetchURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/daily-verses.json";
+}
 // ajax data
 var jQueryPromise = $.ajax(fetchURL);
 var realPromise = Promise.resolve(jQueryPromise);
@@ -17,7 +22,6 @@ realPromise
   var verseData = jQuery.parseJSON( res );
   // shows the verses requested
   showContent(verseData);
-  console.log('We have dice on Github data!');
 }, function(err) {
   // error
   console.log('do dice on Github data :(');
