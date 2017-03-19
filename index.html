@@ -73,7 +73,7 @@ function checkVerses(title, verseRef){
 	}, function(err) {
 	  // error
 	  // show verse that errored
-	  var html = "<p>verseRef fail: " + title + "> " + verseRef + "</p>";
+	  var html = '<p>verseRef fail: ' + title + ' > <a href="https://getbible.net/json?scripture="' + verseRef + '>' + verseRef + '</a></p>';
 	  $('#content').append(html);
 	  // show error count
 	  errorCount++;
