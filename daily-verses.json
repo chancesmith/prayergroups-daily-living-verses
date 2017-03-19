@@ -1,26 +1,87 @@
 [
-{
-	"groupTitle": "Addiction",
-	"verses":[
-  {"text":"2 Timothy 1:7","api":"2 Timothy 1:7"}
-  ,{"text":"Psalm 34:4","api":"Psa 34:4"}
-  ,{"text":"Psalm 56:3","api":"Psa 56:3"}
-  ]
-},
-{
-	"groupTitle": "Afraid",
-  "verses":[
-  {"text":"2 Timothy 1:7","api":"2 Timothy 1:7"}
-  ,{"text":"Psalm 34:4","api":"Psa 34:4"}
-  ,{"text":"Psalm 56:3","api":"Psa 56:3"}
-  ]
-},	
-{
-	"groupTitle": "Fear",
-  "verses":[
-  {"text":"2 Timothy 1:7","api":"2 Timothy 1:7"}
-  ,{"text":"Psalm 34:4","api":"Psa 34:4"}
-  ,{"text":"Psalm 56:3","api":"Psa 56:3"}
-  ]
-}
+  {
+    "groupTitle": "Addiction",
+    "verses": [
+      {
+        "text": "2 Timothy 1:7",
+        "api": "2 Timothy 1:7"
+      },
+      {
+        "text": "Psalm 34:4",
+        "api": "Psa 34:4"
+      },
+      {
+        "text": "Psalm 56:3",
+        "api": "Psa 56:3"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Afraid",
+    "verses": [
+      {
+        "text": "2 Timothy 1:7",
+        "api": "2 Timothy 1:7"
+      },
+      {
+        "text": "Psalm 34:4",
+        "api": "Psa 34:4"
+      },
+      {
+        "text": "Psalm 56:3",
+        "api": "Psa 56:3"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Fear",
+    "verses": [
+      {
+        "text": "2 Timothy 1:7",
+        "api": "2 Timothy 1:7"
+      },
+      {
+        "text": "Psalm 34:4",
+        "api": "Psa 34:4"
+      },
+      {
+        "text": "Psalm 56:3",
+        "api": "Psa 56:3"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Hope",
+    "verses": [
+      {
+        "text": "2 Timothy 1:7",
+        "api": "2 Timothy 1:7"
+      },
+      {
+        "text": "Psalm 34:4",
+        "api": "Psa 34:4"
+      },
+      {
+        "text": "Psalm 56:3",
+        "api": "Psa 56:3"
+      }
+    ]
+  },
+  {
+    "groupTitle": "Worry",
+    "verses": [
+      {
+        "text": "2 Timothy 1:7",
+        "api": "2 Timothy 1:7"
+      },
+      {
+        "text": "Psalm 34:4",
+        "api": "Psa 34:4"
+      },
+      {
+        "text": "Psalm 56:3",
+        "api": "Psa 56:3"
+      }
+    ]
+  }
 ]
