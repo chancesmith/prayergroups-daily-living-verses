@@ -68,12 +68,22 @@ function checkVerses(title, verseRef){
 	promise
 	.then(function (res){
 	  // success
-	  versesOkay++;
-	  $('#verses-okay').empty().append("successful: "+versesOkay);
+	  if (res == "NULL"){
+			// show verse that errored
+		  var html = '<p>verseRef fail: ' + title + ' > <a href="https://getbible.net/json?scripture="' + verseRef + '>' + verseRef + '</a></p>';
+		  $('#content').append(html);
+		  // show error count
+		  errorCount++;
+		  var versesErrored = "errored: " + errorCount;
+		  $('#verses-errored').empty().append(versesErrored);
+	  } else {
+			versesOkay++;
+		  $('#verses-okay').empty().append("successful: "+versesOkay);
+	  }
 	}, function(err) {
 	  // error
 	  // show verse that errored
-	  var html = '<p>verseRef fail: ' + title + ' > <a href="https://getbible.net/json?scripture="' + verseRef + '>' + verseRef + '</a></p>';
+	  var html = '<p>verseRef fail: ' + title + ' > <a href="https://getbible.net/json?scripture="' + verseRef + '">' + verseRef + '</a></p>';
 	  $('#content').append(html);
 	  // show error count
 	  errorCount++;
