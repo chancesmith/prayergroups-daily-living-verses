@@ -6,6 +6,7 @@
 <h1>Testing api requests</h1>
 <div id="content"></div>
 <script>
+
 // verse data
 var verseGithubURL = "";
 if(getUrlVar("testdata")){
@@ -57,6 +58,29 @@ function showContent(verseData){
 	  });
 	});
 	$('#content').append(html);
+}
+
+// test each verse
+function checkVerses(){
+  $('p.verse').each(function(){
+    var verseRef = $(this).attr('data-verse');
+    var fetchURL = "https://crossorigin.me/https://getbible.net/json?scripture="+verseRef;
+    
+    // ajax data
+    var jQueryPromise = $.ajax(fetchURL);
+    var realPromise = Promise.resolve(jQueryPromise);
+
+    // promise to retreive data
+    realPromise
+    .then(function (res){
+      // success
+      $(this).append(' Success! :)');
+    }, function(err) {
+      // error
+      $(this).append(' Fail :(');
+      console.log("verseRef fail: "+verseRef);
+    });
+  });
 }
 </script>
 </body>
