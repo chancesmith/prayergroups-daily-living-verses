@@ -4,6 +4,8 @@
 </head>
 <body>
 <h1>Testing api requests</h1>
+<div id="verses-checked"></div>
+<div id="verses-errored"></div>
 <div id="content"></div>
 <script>
 
@@ -28,8 +30,6 @@ realPromise
 }, function(err) {
   // error
   console.log("do dice on Github data :(");
-}).then(function (){
-  checkVerses();
 });
 
 // check for URL variable
@@ -41,46 +41,42 @@ function getUrlVar(q) {
 function showContent(verseData){
 	var html = "";
 	var count = 0;
+	var errorCount = 0;
 	verseData.forEach(function(category) {
 	  count++;
-	  html += '<h2><strong>';
-	  html += category.groupTitle;
-	  html += '</strong></h2>';
 	  var verses = category.verses;
 	  verses.forEach(function(verse) {
-	    html += '<p class="verse" data-verse="';
-	    // add data-verse
-	    html += verse.api;
-	    html += '"><span>';
-	    // add text
-	    html += verse.text;
-	    html += '</span></p>';
+	    // check this verse
+	    checkVerses(category.groupTile, verse.api );
+	    var versesChecked = "verses checked: " + count;
+			$('#verses-checked').empty().append(versesChecked);
 	  });
 	});
-	$('#content').append(html);
 }
 
 // test each verse
-function checkVerses(){
-  $('p.verse').each(function(){
-    var verseRef = $(this).attr('data-verse');
-    var fetchURL = "https://crossorigin.me/https://getbible.net/json?scripture="+verseRef;
-    
-    // ajax data
-    var jQueryPromise = $.ajax(fetchURL);
-    var realPromise = Promise.resolve(jQueryPromise);
+function checkVerses(title, verseRef){
+	var fetchURL = "https://crossorigin.me/https://getbible.net/json?scripture="+verseRef;
 
-    // promise to retreive data
-    realPromise
-    .then(function (res){
-      // success
-      $(this).append(' Success! :)');
-    }, function(err) {
-      // error
-      $(this).append(' Fail :(');
-      console.log("verseRef fail: "+verseRef);
-    });
-  });
+	// ajax data
+	var jQueryPromiseVerseCheck = $.ajax(fetchURL);
+	var promise = Promise.resolve(jQueryPromiseVerseCheck);
+
+	// promise to retreive data
+	promise
+	.then(function (res){
+	  // success
+	  return true;
+	}, function(err) {
+	  // error
+	  // show verse that errored
+	  var html = "verseRef fail: " + title + "> " + verseRef;
+	  $('#content').append(html);
+	  // show error count
+	  var versesErrored = "verses checked: " + errorCount;
+	  $('#verses-errored').empty().append(versesErrored);
+	  return false;
+	})
 }
 </script>
 </body>
