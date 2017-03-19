@@ -5,9 +5,14 @@
 <body>
 <h1>Testing api requests</h1>
 <div id="verses-checked"></div>
+<div id="verses-okay"></div>
 <div id="verses-errored"></div>
 <div id="content"></div>
 <script>
+// vars
+var count = 0;
+var errorCount = 0;
+var versesOkay = 0;
 
 // verse data
 var verseGithubURL = "";
@@ -39,15 +44,12 @@ function getUrlVar(q) {
 
 // check for test variable (only show this content if variable exists)
 function showContent(verseData){
-	var html = "";
-	var count = 0;
-	var errorCount = 0;
 	verseData.forEach(function(category) {
-	  count++;
 	  var verses = category.verses;
 	  verses.forEach(function(verse) {
+		  count++;
 	    // check this verse
-	    checkVerses(category.groupTile, verse.api );
+	    checkVerses(category.groupTitle, verse.api );
 	    var versesChecked = "verses checked: " + count;
 			$('#verses-checked').empty().append(versesChecked);
 	  });
@@ -66,16 +68,17 @@ function checkVerses(title, verseRef){
 	promise
 	.then(function (res){
 	  // success
-	  return true;
+	  versesOkay++;
+	  $('#verses-okay').empty().append("successful: "+versesOkay);
 	}, function(err) {
 	  // error
 	  // show verse that errored
-	  var html = "verseRef fail: " + title + "> " + verseRef;
+	  var html = "<p>verseRef fail: " + title + "> " + verseRef + "</p>";
 	  $('#content').append(html);
 	  // show error count
-	  var versesErrored = "verses checked: " + errorCount;
+	  errorCount++;
+	  var versesErrored = "errored: " + errorCount;
 	  $('#verses-errored').empty().append(versesErrored);
-	  return false;
 	})
 }
 </script>
