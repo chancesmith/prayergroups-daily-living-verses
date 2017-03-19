@@ -19,7 +19,7 @@ var verseGithubURL = "";
 if(getUrlVar("testdata")){
   verseGithubURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/test-daily-verses.json";
 }
-else{
+else if (getUrlVar("test")){
   verseGithubURL = "https://crossorigin.me/https://raw.githubusercontent.com/chancesmith/prayergroups-daily-living-verses/master/daily-verses.json";
 }
 // ajax data
