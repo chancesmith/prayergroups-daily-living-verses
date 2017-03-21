@@ -37,8 +37,8 @@ function getUrlVar(q) {
 
 // check for test variable (only show this content if variable exists)
 function showContent(verseData){
-  if(getUrlVar("test")){
-    // $('.sqs-block-content').append('<p class="verse" data-verse="Psa 51:1;51:10">test</p>');
+  // crisis prayer page
+  if($("body#collection-58c7295bf7e0aba55a4e6688").length > 0){
     $(".sqs-block").remove(); // all content blocks
     var html = "";
     var count = 0;
@@ -78,7 +78,7 @@ $('body').append('<div id="myModal" class="modal"> <div class="modal-content"> <
 function makeVersesClickable(){
   $('p.verse').click(function(){
     var verseRef = $(this).attr('data-verse');
-    console.log("verseRef: "+verseRef);
+    //console.log("verseRef: "+verseRef);
     var fetchURL = "https://crossorigin.me/https://getbible.net/json?scripture="+verseRef;
     // When the user clicks on verse, open the modal
     openModal();
